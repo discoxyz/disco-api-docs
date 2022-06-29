@@ -1,0 +1,11 @@
+# This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
+# See https://redoc.ly/docs/cli/ for more information.
+openapi/openapi.yaml:
+  info-license:
+    - '#/info'
+  tag-description:
+    - '#/tags/0/description'
+  spec:
+    - '#/paths/~1v1~1profile~1{did}/get/responses/200'
+    - '#/paths/~1v1~1profile~1address~1{address}/get/responses/200'
+    - '#/paths/~1v1~1profile~1byTwitter~1{twitterHandle}/get/responses/200'
